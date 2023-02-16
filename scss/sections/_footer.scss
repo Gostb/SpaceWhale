@@ -1,0 +1,167 @@
+.footer {
+
+    &__topic,
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        color: $whiteColor;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 22px;
+        }
+    }
+
+    &__page,
+    &__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        color: #E7E7E7;
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__email,
+    &__button {
+        padding: 14px 20px;
+        border-radius: 12px;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            padding: 16px 24px;
+        }
+    }
+
+    &__top {
+        background-color: #2B2B39;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: 640px) {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 96px;
+            padding: 75px 0;
+        }
+    }
+
+    &__column {
+        text-align: center;
+    }
+
+    &__page {
+        line-height: 35px;
+
+        @media screen and (min-width: 768px) {
+            line-height: 46px;
+        }
+    }
+
+    &__form {
+
+        @media screen and (min-width: 1024px) {
+            text-align: left;
+            max-width: 340px;
+        }
+    }
+
+    &__title {
+        @media screen and (min-width: 1024px) {
+            max-width: 179px;
+            line-height: 32px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__subtitle {
+        line-height: 28px;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 300px;
+            line-height: 28px;
+        }
+    }
+
+    &__group {
+        position: relative;
+        margin-top: 35px;
+    }
+
+    &__email {
+        color: $whiteColor;
+        background: transparent;
+        border: 1px solid rgba($whiteColor, 0.35);
+        transition: 0.3s border-color;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 12px;
+            color: #717179;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $whiteColor;
+        }
+    }
+
+    &__button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        background-color: $whiteColor;
+        margin-top: 30px;
+        color: #2B2B39;
+
+        @media screen and (min-width: 640px) {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: 0;
+            width: auto;
+        }
+    }
+
+    &__author {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #E7E7E7;
+    }
+
+    &__bottom {
+        background-color: #20202D;
+    }
+
+    &__wrapper {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-between;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 10px;
+    }
+}
